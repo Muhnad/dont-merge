@@ -1,0 +1,22 @@
+{
+  "name": "dont-merge",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Muhannad Abdelrazek <muhnad.abdelrazek@gmail.com>",
+  "license": "ISC",
+  "repository": "https://github.com/Muhnad/propbot.git",
+  "scripts": {
+    "start": "probot run ./index.js"
+  },
+  "dependencies": {
+    "probot": "^5.0.0"
+  },
+  "devDependencies": {
+    "smee-client": "^1.0.1",
+    "standard": "^10.0.3"
+  },
+  "engines": {
+    "node": ">= 7.7.0",
+    "npm": ">= 4.0.0"
+  }
+}
