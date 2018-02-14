@@ -1,5 +1,6 @@
 # dont-merge
 
+> Prevent merging of Pull Requests with "don't merge" or "do not merge" label selected on labels area.
 
 <p align="center">
   <img alt="don't merge steps" src ="https://media.giphy.com/media/l4pSU121cLwSeJudG/giphy.gif"/>
