@@ -1,10 +1,23 @@
 {
   "name": "dont-merge",
   "version": "1.0.0",
-  "description": "",
+  "description": "Prevent merging of Pull Requests with don't merge or do not merge label selected on labels area.",
   "author": "Muhannad Abdelrazek <muhnad.abdelrazek@gmail.com>",
   "license": "ISC",
-  "repository": "https://github.com/Muhnad/propbot.git",
+  "repository": "https://github.com/Muhnad/dont-merge.git",
+  "homepage": "https://github.com/Muhnad/dont-merge#readme",
+  "bugs": "https://github.com/Muhnad/dont-merge/issues",
+  "files": [
+    "index.js",
+    "src/"
+  ],
+  "keywords": [
+    "probot",
+    "github app",
+    "do not merge",
+    "prevent merging",
+    "labels"
+  ],
   "scripts": {
     "start": "probot run ./index.js"
   },
@@ -16,7 +29,7 @@
     "standard": "^10.0.3"
   },
   "engines": {
-    "node": ">= 7.7.0",
+    "node": "8",
     "npm": ">= 4.0.0"
   }
 }
