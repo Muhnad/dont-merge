@@ -6,12 +6,7 @@
   <img alt="don't merge steps" src ="https://media.giphy.com/media/l4pSU121cLwSeJudG/giphy.gif"/>
 </p>
 
-## Usage
- - Install the app on your GitHub Repositories: [dont-merge](https://github.com/apps/dont-merge)
- - When creating a pull request that you don't want to be merged, simply add the label "don't merge || do not merge".
- - the dont-merge will set/update the status of the pull request depending on the pull requests label.
-
-## Local setup
+## Setup
 
  - Setup:
 
@@ -26,6 +21,12 @@
  - Update the `.env` file.
 
  - Run `npm start`
+
+
+## Usage
+- When creating a pull request that you don't want to be merged, simply add the label "don't merge || do not merge".
+- the dont-merge will set/update the status of the pull request depending on the pull requests label.
+
 
 ## Deployment
 
