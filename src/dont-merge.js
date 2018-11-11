@@ -1,20 +1,22 @@
 const event = require('./actions');
 const utils = require('./utils');
 
-function handleRequestLabels (robot, context) {
+function handleRequestLabels(robot, context) {
   robot.on(event.actions, async context => {
-    const {labels, head} = context.payload.pull_request;
+    const { labels, head } = context.payload.pull_request;
     const hasDontMergeLabel = labels.some(label => utils.isDontMerge(label.name));
     const state = hasDontMergeLabel ? 'failure' : 'success';
-    const description = hasDontMergeLabel ? 'Do not merge!' : 'Ready for review/merge';
+    const description = hasDontMergeLabel ? 'Do not merge!' : 'Ready for merge';
 
-    context.github.repos.createStatus(context.repo({
-      sha: head.sha,
-      target_url: 'https://github.com/apps/dont-merge',
-      context: 'dont-merge',
-      state,
-      description
-    }));
+    context.github.repos.createStatus(
+      context.repo({
+        state,
+        description,
+        sha: head.sha,
+        target_url: process.env.APP_LINK,
+        context: process.env.APP_NAME
+      })
+    );
   });
 }
 
